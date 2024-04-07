@@ -1,0 +1,40 @@
+[
+    {
+        "PlanEstudio":"Plan de Estudio (Nuevo)",
+        "Modulo":"M3",
+        "Lecture":"TypeScript",
+
+        "Notas":[{
+            "Introduccion":[{
+                "IndiceRef":"xx",
+                "Titulo":"xx",
+                "Descripcion":"xx",
+                "Foto":[{
+                    "Leyenda":"xx",
+                    "Path":"xx",
+                    "Transcripcion":"xx"
+                }]
+            }],
+            "Desarrollo":[{
+                "IndiceRef":"xx",
+                "Titulo":"",
+                "Descripcion":"",
+                "Foto":[{
+                    "Leyenda":"xx",
+                    "Path":"xx",
+                    "Transcripcion":"xx"
+                }]
+            }],
+            "Cierre":[{
+                "IndiceRef":"xx",
+                "Titulo":"",
+                "Descripcion":"",
+                "Foto":[{
+                    "Leyenda":"xx",
+                    "Path":"xx",
+                    "Transcripcion":"xx"
+                }]
+            }]
+        }]
+    }
+]

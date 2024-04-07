@@ -1,0 +1,131 @@
+M3-PI Bpo Servicio Tecnico
+
+M3-L01-TypeSCript
+INSTRUCCIONES
+Habilidades y competencias que desarrollarás...
+
+Planificación de estructura de proyecto Full Stack.
+
+Planificación de estructura de base de datos.
+
+M3-L01	:-->>	[REQUISITOS]:
+
+Haber redactado las historias de usuario para la aplicación de gestión de turnos que vamos a desarrollar.
+
+Haber planteado la estructura de entidades y atributos para la aplicación. La misma debe contar con al menos las siguientes entidades: Usuarios, Turnos y Credenciales (usuario y contraseña de cada usuario).
+ACTIVIDAD 1
+
+PUNTOS A TENER EN CUENTA
+¡Bienvenidos al Proyecto Integrador del módulo 3!
+Notarás que este proyecto será mucho más robusto y desafiante que los anteriores, por lo cual será clave más que nunca contar con una correcta PLANIFICACIÓN.
+
+
+
+Para iniciar, pasamos en limpio lo que queremos lograr: una aplicación para la gestión de turnos. El usuario deberá poder, interactuando con el FrontEnd, agendar su turno en una fecha y hora determinados para asistir a ser atendido a un determinado lugar. 
+
+Para encarar este proyecto partiremos de algunas pautas y simplificaciones:
+
+Tú decides de qué lugar se trata: un banco, una peluquería, un restaurant, un consultorio médico, etc. Tendrás libertad para esta elección y luego la temática deberá verse reflejada en el diseño de tu aplicación de Frontend.
+
+Un usuario siempre debe estar autenticado para poder reservar un turno. No se agendará turnos a anónimos o invitados. 
+
+Los turnos deberán ser agendados siempre dentro del horario de atención del establecimiento, el cual también estará en tus manos decidir cuál es. También deberás tener en cuenta los fines de semana como días no laborables. 
+
+Asumimos que el establecimiento cuenta con “infinitos” recursos para atender a sus clientes. Es decir, si 10, 20, 50 o 100 usuarios agendaron un turno para las 10:00hs del día 11/12/24, asumimos que el lugar cuenta con capacidad para poder atenderlos a todos al mismo tiempo en este horario. 
+
+Los turnos reservados por los usuarios pueden ser cancelados hasta el día anterior al día de la reserva. No implementaremos la función de reprogramar. 
+
+
+
+Asimismo, definiremos una serie de EXTRA-CREDITS, los cuales podrás incluir en tu proyecto en las cantidades y tiempos que estén dentro de tus posibilidades:
+
+Envío de confirmación vía email al usuario luego de reservar un turno o cancelarlo.
+
+Posibilidad de que el usuario “suba” una foto perfil a su cuenta a través de un archivo de imagen (.jpg, .png, etc).
+
+
+ACTIVIDAD 2
+
+ACTIVIDAD
+Ahora que tenemos estas pautas sobre la mesa, pasemos a la actividad del día: ¡a planificar!
+
+Redactar las “user stories” de tu proyecto. En el video que acompaña a esta consigna te explicamos qué son estos puntos y algunas estrategias para desarrollarlos.
+
+Define un primer esquema de tu base de datos. Probablemente luego encuentres que hay cosas que modificar o mejorar, pero al menos establece un punto de partida: entidades involucradas, relación entre las entidades, atributos que queremos describir y, muy importante, los tipos de datos de cada atributo. 
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+M3-L02-TypeSCript II
+		INSTRUCCIONES
+* 	Habilidades y competencias que desarrollarás...
+
+*	Configuración de entorno de desarrollo con TypeScript.
+
+M3-L02	:-->>	[REQUISITOS]:
+
+*	Haber creado correctamente el archivo package.json.
+
+*	Haber creado correctamente el archivo tsconfig.json.
+
+*	Haber creado correctamente la carpeta src y el módulo index.ts dentro de la carpeta.
+
+*	Haber configurado correctamente los comandos build y start para que funcionen de acuerdo a lo esperado en las consignas.
+
+		ACTIVIDAD 01
+*	En esta actividad nos centraremos en configurar nuestro entorno de desarrollo con TypeScript. Para ello haremos lo siguiente:
+
+*	Generar el archivo package.json con el comando correspondiente.
+
+		ACTIVIDAD 02
+
+*	Instalar TypeScript . Recuerda que te sugerimos hacer esta instalación de forma LOCAL.
+
+		ACTIVIDAD 03
+
+*	Generar el archivo tsconfig.json con el comando correspondiente.
+
+		ACTIVIDAD 04
+
+*	Ajustar en tsconfig.json las configuraciones que hemos visto en la clase.
+
+		ACTIVIDAD 05
+
+*	Configurar el comando build para que ejecute el compilador de TypeScript y el comando start para que ejecute dicho build.
+
+		ACTIVIDAD 06
+
+*	Crear la carpeta src del proyecto y el módulo index.ts.
+
+		ACTIVIDAD 07
+
+*	Realizar pruebas de variables, objetos, funciones y demás características de TypeScript vistas en clase dentro de este módulo index.ts.
+
+		¡Bien hecho!
+
+		TIPS
+
+*	Si bien esta actividad puede parecer sencilla, la configuración de TypeScript requiere de mucha atención y cuidado en cada una de las propiedades involucradas. 
+	Recrea paso a paso lo visto en las clases para que tu módulo index.ts se pueda “buildear” correctamente y luego ser ejecutado desde el build. 
+
+*	Aprovechar el index.ts a modo de “sandbox”. Has todas las pruebas que quieras con las características de TypeScript para ir familiarizándote con ellas.
+
+*	No te preocupes por las importaciones y exportaciones de módulos. Si intentas trabajar con varios módulos probablemente te encuentres con algunos errores. 
+	No te apresures. En la próxima clase veremos cómo realizar este paso.  
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --

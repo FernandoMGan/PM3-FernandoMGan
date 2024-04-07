@@ -1,0 +1,511 @@
+[
+    {
+        "PlanEstudio": "Plan de Estudio (Nuevo)",
+        "Modulo": "M3",
+        "Lecture": "TypeScript",
+        "Notas": [
+            {
+                "NodeType": "00",
+                "Data": {
+                    "NodeDesc": "Notas de Estudio de Fernando Gan"
+                }
+            },
+            {
+                "NodeType": "01",
+                "Data": {
+                    "NodeDesc": "Introduccion"
+                }
+            },
+            {
+                "NodeType": "02",
+                "Data": {
+                    "NodeDesc": "Proyecto del Modulo"
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "Proyecto del Modulo"
+                }
+            },
+            {
+                "NodeType": "04",
+                "Data": {
+                    "NodeDesc": "Te presentamos el proyecto M3",
+                    "NodeSubDesc": "Como ya sabes, a lo largo de cada módulo desarrollarás un proyecto clase a clase agregando nuevas features y tecnologías a medida que las veas en clase. En el siguiente video, ¡Jorge te presentará una DEMO del proyecto que desarrollarás!"
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "Inicio"
+                }
+            },
+            {
+                "NodeType": "04",
+                "Data": {
+                    "NodeDesc": "Introducción",
+                    "NodeSubDesc": "Nuevo módulo, nuevo lenguaje. ¡Bienvenido al módulo 3! En esta clase comenzaremos a asentar nuestras bases en un lenguaje similar a JavaScript, pero a su vez muy diferente. Veamos esto en el siguiente video."
+                }
+            },
+            {
+                "NodeType": "05",
+                "Data": {
+                    "VideoTitle": "Video Introduccion a TypeScript",
+                    "VideoName": "",
+                    "VideoPath": ""
+                }
+            },
+            {
+                "NodeType": "02",
+                "Data": {
+                    "NodeDesc": "Revisemos cuales son los objetivos de esta clase"
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "01 - Comprender los conceptos básicos de TypeScript."
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "02 - Conocer cómo generar un entorno de desarrollo en TypeScript."
+                }
+            },
+
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "03 - Familiarizarse con la sintaxis básica de TypeScript."
+                }
+            },
+
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "04 - Entender la tipificación estática y sus beneficios."
+                }
+            },
+            {
+                "NodeType": "01",
+                "Data": {
+                    "NodeDesc": "Desarrollo"
+                }
+            },
+            {
+                "NodeType": "02",
+                "Data": {
+                    "NodeDesc": "TypeScript"
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "TypeScript"
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "IntroducciónTypeScript es un lenguaje de programación de código abierto fuertemente tipado que actúa como una extensión de JavaScript. En otras palabras, es JavaScript con esteroides."
+                }
+            },
+            {
+                "NodeType": "04",
+                "Data": {
+                    "NodeDesc": "¿Fuertemente tipado?",
+                    "NodeSubDesc": "Pero, ¿Qué significa que sea un lenguaje 'fuertemente tipado'? Recordemos que dentro de las características básicas de JavaScript, se menciona que es un lenguaje de programación "débilmente tipado". Esto significa que las variables declaradas en JavaScript pueden cambiar de tipo de dato durante la ejecución de un programa."
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "Por ejemplo, podríamos definir una variable x que sea inicializada con un valor numérico, y en algún otro lugar del código decidir cambiarla a un string."
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "ImgPath": "xx"
+                }
+            },
+
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "En TypeScript esto no sería posible ya que el tipo de dato es estático, lo que significa que está asociado a la variable en el momento de su creación y no permite que sea modificado nunca más, y el tratar de modificarlo conllevará a un error."
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "ImgPath": "xx"
+                }
+            },
+            {
+                "NodeType": "04",
+                "Data": {
+                    "NodeDesc": "¿Por qué utilizar Typescript?",
+                    "NodeSubDesc": "En realidad, TypeScript nos da las mismas funcionalidades de JavaScript, pero con una capa extra de seguridad gracias a su sistema de tipado. Por esto se dice que son lenguajes “primos”. Esto quiere decir que podemos trabajar código tal como lo haríamos con JavaScript, pero con la ventaja de que podemos supervisar la consistencia en los tipos de datos utilizados para prevenir comportamientos inesperados en el código o bugs."
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "ImgPath": "xx"
+                }
+            },
+
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "Consideremos el siguiente caso. Imagina que dentro de un archivo index.js típico existe una función que utiliza como argumento un string para imprimir algo en consola. Al trabajar con JavaScript estamos asumiendo que efectivamente ese argumento recibido será siempre un string."
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "En el mejor escenario esto va a funcionar sin problemas pero, ¿qué ocurre si en lugar de recibir un string la función recibe un número, un array o un objeto?:"
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "ImgPath": "xx"
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "En efecto, obtenemos un error dado que el método toUpperCase solo está definido para strings. Este tipo de errores son más frecuentes de lo que creemos. "
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "👀 Ejemplo real Cuando recibimos información de una API asumimos que la información vendrá de determinada manera, pero muchas veces viene con otro formato. Estos errores serían detectados únicamente al momento de ejecutar el código. TypeScript nos permite ahorrarnos estos errores."
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "Este lenguaje hace una verificación en tiempo de compilación, ayudándonos a detectar errores mientras escribimos el código y no al ejecutarlo."
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "Continuando con el ejemplo anterior, vamos a hacer una prueba de esto. Primero cambiaremos la extensión del archivo de index.js a index.ts. Luego vamos a agregarle a la variable user el tipado (user: string). Al hacer esto nos daremos cuenta que inmediatamente podemos ver los errores en la función sayHello() con los distintos argumentos."
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "ImgPath": "xx"
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "Además de brindarnos información sobre los errores de forma rápida, TypeScript incluye una herramienta nativa de autocompletado de funciones en el editor de texto, lo que lo vuelve más preciso dando opciones compatibles con el tipo de dato asociado."
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "ImgPath": "xx"
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "Es necesario hacer la observación de que los entornos de ejecución como node o los navegadores web no tienen ni idea de qué es TypeScript ni su sintaxis para tipar estáticamente, pues solo trabajan con JavaScript. Si intentamos ejecutar el archivo index.ts con node recibiremos errores..."
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "Para poder ejecutar este script es necesario que sea previamente compilado (traducido) a JavaScript. Para esto debemos realizar algunas configuraciones en nuestro programa. A continuación exploraremos de qué se trata esto."
+                }
+            },
+
+            {
+                "NodeType": "02",
+                "Data": {
+                    "NodeDesc": "Configuración de entorno"
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "Configuración de entorno"
+                }
+            },
+            {
+                "NodeType": "04",
+                "Data": {
+                    "NodeDesc": "Configuración inicial de entorno",
+                    "NodeSubDesc": "Para poder utilizar TypeScript es necesario instalarlo dentro de nuestro proyecto o de forma global en nuestra computadora. Esto lo podemos hacer con estos comandos..."
+                }
+            },
+
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "Con este comando podrás instalar TypeScript de forma global en tu computadora y utilizarlo sin problemas en cualquier proyecto."
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "ImgPath": "xx"
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "Este comando creará automáticamente un proyecto local de node con todas las dependencias de este lenguaje ya instaladas."
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "ImgPath": "xx"
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "Te recomendamos que NO instales TypeScript globalmente, ya que puede traer problemas de compatibilidad de versiones más adelante."
+                }
+            },
+
+
+            {
+                "NodeType": "03",
+                "Data": {
+                    "ImgPath": "xx"
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "Una vez hecho esto, podremos compilar el código TS a JS utilizando el comando npx tsc index.ts. Al hacerlo, nos daremos cuenta que dentro de nuestro proyecto se crea un archivo de .js. ¡Es un archivo de JavaScript básico!"
+                }
+            },
+            {
+                "NodeType": "05",
+                "Data": {
+                    "VideoTitle": "Video Introduccion a TypeScript",
+                    "VideoName": "",
+                    "VideoPath": ""
+                }
+            },
+            {
+                "NodeType": "04",
+                "Data": {
+                    "NodeDesc": "ESLint",
+                    "NodeSubDesc": "Antes de empezar con las bases de TypeScript vamos a aprender a cómo configurar un 'analizador de código'. Por analizador de código nos referimos a una herramienta que permite al lenguaje detectar e informar los errores conforme se escriben líneas de código. Si bien el análisis proporcionado nos permite trabajar en la mayoría de casos, hay ocasiones en las que las necesidades del proyecto requieren opciones más personalizables y de mayor alcance. Para ello, haremos uso de ESLint. ESLint es una herramienta para análisis de código de JavaScript, puede ser implementada con TypeScript mediante la adición de algunos plugins con características específicas. Para incorporarlo a nuestro proyecto, es necesario instalar dependencias que serán utilizadas durante el proceso de desarrollo, a través del comando…"
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "xx"
+                }
+            },
+
+
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "De esta forma podemos utilizar a ESLint para analizar y darle formato al código, aunque debemos hacer algunas configuraciones. En primera instancia, hay que crear un archivo de configuración llamado .eslintrc.js (nótese el punto del inicio) entro del cual configuraremos los plugins necesarios."
+                }
+            },
+
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "xx"
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "xx"
+                }
+            },
+
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "Por último, solo tendrás que asignar en el package.json un nuevo script llamado lint con el valor de la imagen. Profundicemos esto en el siguiente video...."
+                }
+            },
+            {
+                "NodeType": "05",
+                "Data": {
+                    "VideoTitle": "EsLint",
+                    "VideoName": "",
+                    "VideoPath": ""
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "¡Ahora sí! Estamos listos para aprender los fundamentos de TypeScript."
+                }
+            },
+            {
+                "NodeType": "02",
+                "Data": {
+                    "NodeDesc": "Tipos de datos"
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "Tipos de datos"
+                }
+            },
+            {
+                "NodeType": "04",
+                "Data": {
+                    "NodeDesc": "Tipos de datos",
+                    "NodeSubDesc": "Comenzaremos con los tipos de datos primitivos en TypeScript. El tipado para las variables que contienen estos datos, no necesariamente deben definirse de forma manual, puesto que este lenguaje puede inferir el tipo de forma automática. Veamos esto en el siguiente video..."
+                }
+            },
+            {
+                "NodeType": "05",
+                "Data": {
+                    "VideoTitle": "Tipos de Datos",
+                    "VideoName": "",
+                    "VideoPath": ""
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "Este es un buen ejemplo de cuándo utilizar la asignación de tipos. En la práctica se hace una combinación de la asignación e inferencia de datos para generar código más legible y al mismo tiempo seguro. Veremos más casos de uso conforme avancemos con las clases."
+                }
+            },
+
+
+            {
+                "NodeType": "01",
+                "Data": {
+                    "NodeDesc": "Cierre"
+                }
+            },
+            {
+                "NodeType": "02",
+                "Data": {
+                    "NodeDesc": "Cierre"
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "Cierre"
+                }
+            },
+            {
+                "NodeType": "04",
+                "Data": {
+                    "NodeDesc": "En conclusión...",
+                    "NodeSubDesc": "En esta clase aprendimos un nuevo lenguaje: TypeScript. Vimos cuáles son las ventajas de hacer código utilizando el tipado estático y cómo configurar nuestro entorno de desarrollo para que nuestros proyectos puedan ser más seguros. Descubrimos que TypeScript provee una especie de "asistente de desarrollo" que está al tanto de nuestros posibles errores al momento de escribir código, compilando nuestros scripts con extensión .ts en archivos .js tradicionales. Finalmente, conocimos de qué manera hacer uso de los tipos de datos primitivos, así como a determinar en qué situaciones es beneficioso realizar el tipado estático manualmente y cuándo dejar que este sea inferido."
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "xx"
+                }
+            },
+            {
+                "NodeType": "02",
+                "Data": {
+                    "NodeDesc": "HomeWork"
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "HomeWork"
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "En esta lección encontrarás una introducción al proyecto/homework que deberás desarrollar hoy. Mira el siguiente video con atención y luego sigue las consignas. ¡Buena suerte!🍀 "
+                }
+            },
+            {
+                "NodeType": "05",
+                "Data": {
+                    "VideoTitle": "Hitos del Proyecto",
+                    "VideoName": "",
+                    "VideoPath": ""
+                }
+            },
+            {
+                "NodeType": "04",
+                "Data": {
+                    "NodeDesc": "INSTRUCCIONES...",
+                    "NodeSubDesc": "Habilidades y competencias que desarrollarás... \n Planificación de estructura de proyecto Full Stack.  \n Planificación de estructura de base de datos."
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "ACTIVIDAD 1"
+                }
+            },
+            {
+                "NodeType": "04",
+                "Data": {
+                    "NodeDesc": "PUNTOS A TENER EN CUENTA",
+                    "NodeSubDesc": "¡Bienvenidos al Proyecto Integrador del módulo 3! \n Notarás que este proyecto será mucho más robusto y desafiante que los anteriores, por lo cual será clave más que nunca contar con una correcta PLANIFICACIÓN.  \n Para iniciar, pasamos en limpio lo que queremos lograr: una aplicación para la gestión de turnos. El usuario deberá poder, interactuando con el FrontEnd, agendar su turno en una fecha y hora determinados para asistir a ser atendido a un determinado lugar.  \n Para encarar este proyecto partiremos de algunas pautas y simplificaciones:  \n Tú decides de qué lugar se trata: un banco, una peluquería, un restaurant, un consultorio médico, etc. Tendrás libertad para esta elección y luego la temática deberá verse reflejada en el diseño de tu aplicación de Frontend.  \n Un usuario siempre debe estar autenticado para poder reservar un turno. No se agendará turnos a anónimos o invitados.  \n Los turnos deberán ser agendados siempre dentro del horario de atención del establecimiento, el cual también estará en tus manos decidir cuál es. También deberás tener en cuenta los fines de semana como días no laborables.  \n Asumimos que el establecimiento cuenta con “infinitos” recursos para atender a sus clientes. Es decir, si 10, 20, 50 o 100 usuarios agendaron un turno para las 10:00hs del día 11/12/24, asumimos que el lugar cuenta con capacidad para poder atenderlos a todos al mismo tiempo en este horario.  \n Los turnos reservados por los usuarios pueden ser cancelados hasta el día anterior al día de la reserva. No implementaremos la función de reprogramar. "
+                }
+            },
+            {
+                "NodeType": "04",
+                "Data": {
+                    "NodeDesc": "Asimismo, definiremos una serie de EXTRA-CREDITS, los cuales podrás incluir en tu proyecto en las cantidades y tiempos que estén dentro de tus posibilidades:",
+                    "NodeSubDesc": "Envío de confirmación vía email al usuario luego de reservar un turno o cancelarlo. Posibilidad de que el usuario “suba” una foto perfil a su cuenta a través de un archivo de imagen (.jpg, .png, etc). "
+                }
+            },
+
+
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "ACTIVIDAD 2"
+                }
+            },
+            {
+                "NodeType": "03",
+                "Data": {
+                    "NodeDesc": "ACTIVIDAD"
+                }
+            },
+            {
+                "NodeType": "04",
+                "Data": {
+                    "NodeDesc": "Ahora que tenemos estas pautas sobre la mesa, pasemos a la actividad del día: ¡a planificar!",
+                    "NodeSubDesc": "Redactar las “user stories” de tu proyecto. En el video que acompaña a esta consigna te explicamos qué son estos puntos y algunas estrategias para desarrollarlos. \n Define un primer esquema de tu base de datos. Probablemente luego encuentres que hay cosas que modificar o mejorar, pero al menos establece un punto de partida: entidades involucradas, relación entre las entidades, atributos que queremos describir y, muy importante, los tipos de datos de cada atributo. "
+                }
+            },
+            {
+                "NodeType": "04",
+                "Data": {
+                    "NodeDesc": "[REQUISITOS]:",
+                    "NodeSubDesc": "Haber redactado las historias de usuario para la aplicación de gestión de turnos que vamos a desarrollar. Haber planteado la estructura de entidades y atributos para la aplicación. La misma debe contar con al menos las siguientes entidades: Usuarios, Turnos y Credenciales (usuario y contraseña de cada usuario)."
+                }
+            }
+
+        ]
+    }
+]

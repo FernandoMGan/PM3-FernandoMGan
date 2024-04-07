@@ -1,0 +1,2 @@
+// Manejador de errores
+

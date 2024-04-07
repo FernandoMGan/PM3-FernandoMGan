@@ -1,3 +1,4 @@
+cd C:\Home\Developing\PM3-FernandoMGan
 git add .
 git commit -m "Presentacion Proyecto Final Entregable"
 git push https://github.com/pi-rym/PM3-FernandoMGan.git
