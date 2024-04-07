@@ -1,3 +1,4 @@
+// file .eslintrc.json
 {
     "parserOptions": {
       "ecmaVersion": 2018

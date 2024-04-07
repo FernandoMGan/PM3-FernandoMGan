@@ -10,7 +10,7 @@ const auth = (req: Request, res: Response, next: NextFunction) => {
     if (token === "autenticado") {
         next();
     } else {
-        msgError(req, res, "Error. Falta autenticacion middle", 401); // Utiliza las funciones corregidas
+        msgError(req, res, "Error de Token, No autorizado, Credenciales invalidas.", 401); // Utiliza las funciones corregidas
     }
 };
 

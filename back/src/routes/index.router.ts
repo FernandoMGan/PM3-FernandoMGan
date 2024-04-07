@@ -12,13 +12,15 @@ const router: Router = Router();
 router.get('/', routeHandler);
 
 // Agregar rutas de usuarios
+
 router.get('/users', auth, getUsers); // Asignar getUsers a GET /users
+
 router.get('/users/:id', auth, getUserById); // Asignar getUserById a GET /users/:id
 
 router.post('/users/register', auth, createUser); // Asignar createUser a POST /users
 
 // Agregar rutas de testing
-router.get('/tests', auth, testController);
+router.get('/tests', testController);
 
 export default router;
 

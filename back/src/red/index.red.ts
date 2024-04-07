@@ -10,7 +10,7 @@ const msgSuccess = function (req: Request, res: Response, mensaje: string = '', 
             error: false
         },
         message: mensaje,
-        data
+        data: data 
     });
 };
 
