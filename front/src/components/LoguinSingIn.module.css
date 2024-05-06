@@ -1,0 +1,136 @@
+/* File LoginSignIn.module.css */
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #efd0b1;
+    --hospital-green: #ACD9B2;
+    --error-red: #f30808;
+    --sm: 1.2rem;
+    --md: 2.0rem;
+    --lg: 3.6rem;
+
+    --buttonBorderRadius-brstd: 1rem;
+
+    --tit-company-leg-name: "BPO CHANGE";
+    --app-background-color-fondo: rgba(193, 240, 197, 0.993);
+
+    --vc-nav-back: rgb(149, 243, 145);
+    --vc-nav-border: rgba(0, 255, 0, 0.7);
+    --vc-nav-hover: rgb(87 255 14 /70%);
+    --vc-nav-shadow: rgba(0, 255, 0, 0.8);
+
+    --vc-font-color: rgba(0, 0, 255, 1);
+    --vc-font-hover: rgb(6, 127, 197);
+    --vc-font-active: rgb(112, 1, 107);
+
+    --vc-board-navin: rgb(4, 209, 216);
+    --vc-board-navout: rgb(126, 11, 120);
+
+    --vc-mnu-item-bck: rgb(211, 206, 206);
+    --vc-mnu-item-itm: rgb(219, 207, 94);
+}
+
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: var(--background-color-fondo);
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.nones {
+    display: none;
+}
+
+.container {
+    background-color: #FFFFFF;
+    border: 1px solid var(--vc-nav-border);
+    border-radius: 10px;
+    box-shadow: 0px 0px 0.5rem 0.5rem var(--vc-nav-shadow);
+    height: auto;
+    width: max-content;
+    /* Ajusta el ancho al contenido máximo */
+    ;
+    margin: 2rem;
+    padding: 16px;
+}
+
+.frm-cntd-ppal {
+    width: 350px;
+    border: 1px solid var(--vc-nav-border);
+    border-radius: 10px;
+    padding: 2rem;
+    margin: auto; /* Centrar horizontalmente */
+}
+
+.input-txt,
+input[type="text"] {
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: var(--buttonBorderRadius-brstd);
+    font-size: var(--md);
+    margin-bottom: 1.0rem;
+    margin-left: -2rem;
+    height: 3.0rem;
+    width: 70%;
+    padding: 0.6rem;
+}
+
+input[type="email"] {
+    background-color: var(--vc-board-navin);
+    border: none;
+    border-radius: var(--buttonBorderRadius-brstd);
+    font-size: var(--md);
+    margin-bottom: 1.0rem;
+    margin-left: -2rem;
+    height: 3.0rem;
+    width: 80%;
+    padding: 0.6rem;
+}
+
+.input-pass,
+input[type="password"] {
+    background-color: var(--very-light-pink);
+    border: none;
+    border-radius: var(--buttonBorderRadius-brstd);
+    font-size: var(--md);
+    margin-bottom: 1.0rem;
+    margin-left: -2rem;
+    height: 3.0rem;
+    width: 70%;
+    padding: 0.6rem;
+}
+
+.input-pass:active,
+input[type="password"]:active {
+    border-color: blue;
+}
+
+input[type="button"] {
+    color: var(--vc-font-color);
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+input[type="button"]:hover {
+    color: var(--vc-font-hover);
+    border: 2px solid var(--vc-nav-hover);
+    /* box-shadow: 0px 0px 0.5rem 0.5rem var(--vc-nav-shadow); */
+}
+input[type="button"]:active {
+    color: var(--vc-font-active);
+    border: 1px solid var(--vc-nav-border);
+    font-weight: bold;
+    box-shadow: 0px 0px 0.5rem 0.5rem var(--vc-nav-shadow);
+}

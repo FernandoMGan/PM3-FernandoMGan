@@ -1,4 +1,3 @@
-// file nodemon.json
 {
     "watch":["src"],
     "ext":"ts",

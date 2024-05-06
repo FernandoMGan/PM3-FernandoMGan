@@ -28,7 +28,7 @@ interface ExternalAPIConfig {
 // Carga de variables de entorno y creación de objetos de configuración
 const appConfig: AppConfig = {
     PUERTO: parseInt(process.env.PORT || "3000"), // Se ajustó para leer el puerto desde las variables de entorno o establecerlo en 3000 si no está definido
-    PROYECTO: process.env.PROYECTO || "Bpo Servicio Tecnico"
+    PROYECTO: process.env.PROYECT || "Bpo Servicio Tecnico"
 };
 
 const dbConfig: DBConfig = {

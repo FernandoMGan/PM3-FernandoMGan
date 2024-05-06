@@ -1,0 +1,42 @@
+/* File App.css */
+:root {
+  --vc-nav-back: rgb(149, 243, 145);
+  --vc-nav-border: rgba(0, 255, 0, 0.7);
+  --vc-nav-hover: rgb(87 255 14 /70%);
+  --vc-nav-shadow: rgba(0, 255, 0, 0.8);
+
+  --vc-font-color: rgba(0, 0, 255, 1);
+  --vc-font-hover: rgb(6, 127, 197);
+  --vc-font-active: rgb(214, 78, 207);
+
+  --vc-board-navin: rgb(4, 209, 216);
+  --vc-board-navout: rgb(126, 11, 120);
+}
+
+html {
+  font-size: 62.5%;
+  background-color: var(--vc-white);
+}
+
+.main {
+  min-height: 90vh;
+  /* Ajusta la altura del main como desees */
+}
+
+/* .separator-hr {
+  border-right: 1px solid #ccc;
+  height: 28px;
+} */
+
+.footer {
+  display: flex;
+  position: fixed;
+  border-top: 0.5px solid var(--vc-nav-border);
+  margin-left: 1rem;
+  bottom: 0px;
+  width: 90%;
+  background-color: #f8f9fa;
+  padding: 2.5px 0;
+  text-align: center;
+  justify-content: center;
+}

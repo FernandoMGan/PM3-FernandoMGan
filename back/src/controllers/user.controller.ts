@@ -1,48 +1,64 @@
 // file user.controllers.ts
-
 import { Request, Response, NextFunction } from 'express';
-import { msgSuccess, msgError } from '../red/index.red'; // Asumiendo que aquí tienes tus funciones de respuesta estandarizadas
-// import { usuariosInit } from '../mocaps/index.mocaps'; // Importa los datos de usuarios desde el mockup
-import { getAllUsers } from '../services/user.service';
-import { infoUsuarios } from '../mocaps/users.mocaps';
-import { send } from 'process';
+import { getUsersService, getUsersByIdService, postCreateUsersService } from '../services/user.service';
+import { msgSuccess, msgError } from '../red/index.red';
+import { isValidEmail } from '../helpers/validator.data';
+// import { getUserCredencialService } from '../services/credential.service';
+console.log(`Pasando por el user controler Fernando`);
 
 // Controlador para GET /users
-export const getUsers = (req: Request, res: Response, next: NextFunction) => {
+export const getUsers = async (req: Request, res: Response, next: NextFunction) => {
     try {
-        const users = getAllUsers(); // Obtener todos los usuarios
-        const usersJson = JSON.stringify(users)
-        msgSuccess(req, res, 'Lista de Usuarios', 201, users); // Enviar los usuarios como respuesta
+        const users = await getUsersService();
+        res.status(200).json({ success: true, message: 'Lista de Usuarios', users });
     } catch (err) {
-        msgError(req, res, "Error al obtener la lista de usuarios", 501);
+        console.error("Error al obtener la lista de usuarios", err);
+        res.status(500).json({ success: false, message: "Error al obtener la lista de usuarios" });
     }
 };
 
 // Controlador para GET /users/:id
-export const getUserById = (req: Request, res: Response, next: NextFunction) => {
-    const userId = parseInt(req.params.id); // Convertir el ID de cadena a número
+export const getUsersById = async (req: Request, res: Response, next: NextFunction) => {
+    const userId = parseInt(req.params.id);
     try {
-        const user = infoUsuarios.find(user => user.id === userId); // Buscar el usuario por su ID
+        const user = await getUsersByIdService(userId);
         if (user) {
-            msgSuccess(req, res, `Usuario con ID ${userId} obtenido con éxito`, 200, user); // Enviar el usuario como respuesta
+            res.status(200).json({ success: true, message: `Usuario con ID ${userId}`, data: { user } });
         } else {
-            msgError(req, res, `No se encontró ningún usuario con ID ${userId}`, 404);
+            res.status(404).json({ success: false, message: `No se encontró ningún usuario con ID ${userId}` });
         }
     } catch (err) {
-        msgError(req, res, "Error al obtener el usuario", 501);
+        console.error("Error al obtener el usuario", err);
+        res.status(500).json({ success: false, message: `Error al obtener el usuario, id erroneo ${userId}` });
     }
 };
 
 // Controlador para POST /users
-export const createUser = (req: Request, res: Response, next: NextFunction) => {
-    const { razonFantasia, razonSocial, observacion } = req.body;
-    // Aquí puedes agregar la lógica para crear un nuevo usuario y agregarlo a la lista de usuarios
+export const postCreateUser = async (req: Request, res: Response, next: NextFunction) => {
+    const { name, email, birthdate, nDni } = req.body;
+
+    // Validar los datos de entrada
+    if (!name || !email || !birthdate || !nDni) {
+        return res.status(400).json({ success: false, message: "Faltan campos obligatorios" });
+    }
+
+    // Validar el formato del correo electrónico
+    if (!isValidEmail(email)) {
+        return res.status(400).json({ success: false, message: "El correo electrónico no es válido" });
+    }
+
     try {
-        // Supongamos que el nuevo usuario se crea con un ID único basado en la longitud de la lista de usuarios existentes
-        // nuevoUsuario = usuariosInit();
-        // usuarios.push(nuevoUsuario);
-        msgSuccess(req, res, "Creando un nuevo usuario", 201);
+        // Crear el usuario
+        const newUser = await postCreateUsersService(name, email, birthdate, nDni);
+        console.log(`Mostrando los datos el usuario creado :> ${newUser}`);
+        
+        // Crear la credencial del usuario
+        // await getUserCredencialService(newUser.id);
+
+        // Éxito en la creación del usuario
+        return res.status(201).json({ success: true, message: "Usuario creado exitosamente", data: { user: newUser } });
     } catch (err) {
-        msgError(req, res, "Error en lista de usuarios Lines 45", 500);
+        msgError(req, res, "Error al crear un nuevo usuario", 501);
     }
 };
+

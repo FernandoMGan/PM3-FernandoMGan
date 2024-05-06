@@ -2,7 +2,6 @@
 
 import { Request, Response, NextFunction } from "express";
 import { msgError, msgSuccess } from "../red/index.red"; // Corrige los nombres de las funciones
-import { getAllUsers } from "../services/user.service";
 
 // Implementa el middleware de prueba aquí según tus requisitos
 const auth = (req: Request, res: Response, next: NextFunction) => {

@@ -1,0 +1,17 @@
+/* File MarquesinaMsg.module.css   */
+.marquee-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.marquee-text {
+    white-space: nowrap;
+    animation: scroll 12s linear infinite;
+    color: blue;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+  
