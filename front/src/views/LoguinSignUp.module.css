@@ -1,0 +1,420 @@
+/* File C:\Home\Developing\PM3-FernandoMGan\front\src\views\LoguinSignUp.module.css */
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #efd0b1;
+    --hospital-green: #ACD9B2;
+    --error-red: #f30808;
+    --sm: 1.2rem;
+    --md: 2.0rem;
+    --lg: 3.6rem;
+
+    --buttonBorderRadius-brstd: 1rem;
+
+    --tit-company-leg-name: "BPO CHANGE";
+    --app-background-color-fondo: rgba(193, 240, 197, 0.993);
+
+    --vc-nav-back: rgb(149, 243, 145);
+    --vc-nav-border: rgba(0, 255, 0, 0.7);
+    --vc-nav-hover: rgb(87 255 14 /70%);
+    --vc-nav-shadow: rgba(0, 255, 0, 0.8);
+
+    --vc-font-color: rgba(0, 0, 255, 1);
+    --vc-font-hover: rgb(6, 127, 197);
+    --vc-font-active: rgb(112, 1, 107);
+
+    --vc-board-navin: rgb(4, 209, 216);
+    --vc-board-navout: rgb(126, 11, 120);
+
+    --vc-mnu-item-bck: rgb(211, 206, 206);
+    --vc-mnu-item-itm: rgb(219, 207, 94);
+}
+
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: var(--background-color-fondo);
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+.hidden {
+    /* display: none; */
+    visibility: hidden;
+}
+
+.nones {
+    display: none;
+}
+
+.container {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0.5rem 0.5rem #5b5bef;
+    height: 50rem;
+    width: max-content;
+    margin-top: 2rem;
+    padding: 00px;
+}
+
+.frm-cntd-ppal {
+    display: flex;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0.5rem 0.5rem var(--vc-nav-shadow);
+    height: 45;
+    width: 350px;
+    border: 1px solid var(--vc-nav-border);
+    border-radius: 10px;
+    padding: 2rem;
+    left: 35%;
+    /* Coloca el borde izquierdo del elemento hijo en el centro del contenedor */
+    transform: translateX(-50%);
+    /* Ajusta la posición del elemento hijo hacia la izquierda en la mitad de su ancho */
+    top: 50%;
+    /* Coloca el borde izquierdo del elemento hijo en el centro del contenedor */
+    transform: translateY(-50%);
+    /* Ajusta la posición del elemento hijo hacia la izquierda en la mitad de su ancho */
+}
+
+.container img {
+    border-radius: 1rem;
+    padding: 2rem 0px;
+}
+
+#id-cmp-logo {
+    border-radius: 1rem;
+    padding: 2rem 10px;
+}
+
+.formLoguin {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    margin-left: 25vw;
+    margin-top: 5vh;
+    height: auto;
+    width: 30.0rem;
+    padding: 1.5rem;
+    box-shadow: 0px 0px 0.5rem 0.5rem #0000ff;
+}
+
+.ley-emp,
+.ley-div,
+.ley-prod,
+.ley-sprod,
+.ley-label,
+.ley-label-sujer {
+    text-align: center;
+}
+
+.ley-emp {
+    font-size: var(--lg);
+    font-weight: bold;
+}
+
+.ley-div {
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    font-weight: bold;
+}
+
+.ley-prod {
+    font-size: var(--sm);
+    font-weight: bold;
+}
+
+.ley-sprod {}
+
+.ley-label {}
+
+.ley-label-sujer {}
+
+.input-txt,
+input[type="text"] {
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: var(--buttonBorderRadius-brstd);
+    font-size: var(--md);
+    margin-bottom: 1.0rem;
+    margin-left: -2rem;
+    height: 3.0rem;
+    width: 70%;
+    padding: 0.6rem;
+}
+
+input[type="email"] {
+    background-color: var(--vc-board-navin);
+    border: none;
+    border-radius: var(--buttonBorderRadius-brstd);
+    font-size: var(--md);
+    margin-bottom: 1.0rem;
+    margin-left: -2rem;
+    height: 3.0rem;
+    width: 80%;
+    padding: 0.6rem;
+}
+
+.input-pass,
+input[type="password"] {
+    background-color: var(--very-light-pink);
+    border: none;
+    border-radius: var(--buttonBorderRadius-brstd);
+    font-size: var(--md);
+    margin-bottom: 1.0rem;
+    margin-left: -2rem;
+    height: 3.0rem;
+    width: 70%;
+    padding: 0.6rem;
+}
+
+.input-pass:active,
+input[type="password"]:active {
+    border-color: blue;
+}
+
+#password,
+#username {
+    width: 70%;
+}
+
+
+#flgPasswd,
+#flgPasswdChk,
+#flgPasswdChk {
+    /* font-size: 64px; */
+}
+
+.log-chk-box-first-line {
+    float: left;
+}
+
+.log-chk-box-second-line {
+    float: right;
+}
+
+.flg-passwd {
+    position: absolute;
+    border-style: none;
+    align-items: center;
+    margin-left: 0.5rem;
+    margin-top: 0.6rem;
+}
+
+.log-chk-box {
+    display: inline-flexbox;
+    align-items: center;
+    /* centra los elementos de la barra de herramientas verticalmente */
+    justify-content: space-between;
+    /* distribuye los elementos de la barra de herramientas de forma equilibrada */
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-top: 1.0rem;
+}
+
+.chkBoxsLbl label {
+    align-items: center;
+    /* centra los elementos de la barra de herramientas verticalmente */
+    justify-content: space-between;
+    /* distribuye los elementos de la barra de herramientas de forma equilibrada */
+}
+
+#chkShowPassword,
+#chkRememPassword,
+#chkLogPassRecup,
+#chkRegister {
+    margin-top: 5px;
+}
+
+.login-button {
+    margin-top: 10rem;
+    padding-top: 0rem;
+    gap: 0.75rem;
+}
+
+.primary-button,
+.btn-primary {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.secundary-button,
+.btn-secondary {
+    padding: 10px;
+    background-color: var(--very-light-pink);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button[type="submit"]:hover,
+.btn-primary[type="button"]:hover {
+    background-color: #3E8E41;
+}
+
+.button[type="reset"]:hover,
+.btn-secondary[type="button"]:hover,
+#btnFormReset:hover {
+    background-color: #838383;
+}
+
+#eye-passwd,
+#eye-close {
+    /* display: flex; */
+    font-size: 1.25rem;
+    /* ajusta el tamaÃ±o de la fuente para agrandar los ojos */
+    /* margin-left: 1rem; */
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    /* asegura que los ojos ocupen todo el ancho del contenedor */
+}
+
+bi bi-eye-slash-fill,
+.bi bi-eye-fill {}
+
+.opc-pass {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.formLoguinButton {
+    display: flex;
+    gap: 3rem;
+}
+
+#logNombres,
+#logApellidos {
+    width: 110%;
+}
+
+.btn-outline-secondary {
+    display: flex;
+    position: relative;
+    left: -4rem;
+    top: -3.3rem;
+}
+
+/* btn btn-outline-secondary */
+.frmButEye,
+.frmButEyeChk {
+    display: flex;
+    position: fixed;
+    border-style: none;
+    align-items: center;
+    margin-left: -15.3rem;
+    margin-top: 0.2rem;
+    left: 10rem;
+    background-color: #f30808;
+}
+
+.login-button {
+    gap: 1rem;
+}
+
+.frmChkPswd,
+.frmChkPswdChk {
+    display: flex;
+    /* flex-direction: column; */
+    /* position: relative; */
+    margin-right: 0px;
+}
+
+.FrmButOutLine {
+    background-color: #0000ff;
+    height: 3rem;
+    width: 3rem;
+}
+
+.frmChkPswd img,
+.frmChkPswdChk img {}
+
+#idFrmButOutLineEmailsc {
+    display: flex;
+    flex-direction: row;
+    /* Cambia de column a row */
+    align-items: center;
+    /* Alinea los elementos verticalmente */
+    gap: 1rem;
+    /* Espacio de 1rem entre los elementos */
+    border: 1px solid var(--hospital-green);
+    /* Borde celeste claro */
+    padding: 0.5rem;
+    /* Agrega un pequeño espacio interior */
+}
+
+#idImgCheckEmail,
+#idImgCancelEmail {
+    /* Ajustes adicionales si es necesario */
+    display: flex;
+    position: fixed;
+    padding-left: 2rem;
+}
+
+#logEmail {
+    display: flex;
+    width: 80%;
+}
+
+#idformLoguinButton {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+#btnFormOk,
+#btnFormCancel,
+#btnFormReset {
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+
+.frmChkPswd {
+    display: flex;
+    flex-direction: column !important;
+}
+
+.frmChkPswdImg {
+    display: flex;
+    flex-direction: row !important;
+}
+
+.identid {
+    width: 90% !important;
+}
+
+input[type="button"] {
+    color: var(--vc-font-color);
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+input[type="button"]:hover {
+    color: var(--vc-font-hover);
+    border: 2px solid var(--vc-nav-hover);
+    /* box-shadow: 0px 0px 0.5rem 0.5rem var(--vc-nav-shadow); */
+}
+
+input[type="button"]:active {
+    color: var(--vc-font-active);
+    border: 1px solid var(--vc-nav-border);
+    font-weight: bold;
+    box-shadow: 0px 0px 0.5rem 0.5rem var(--vc-nav-shadow);
+}

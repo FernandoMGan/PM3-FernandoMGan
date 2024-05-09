@@ -1,4 +1,5 @@
-// File C:\Home\Developing\PF-PT19A-FGan-MyPools\front\react plnt\src\redux\store.js
+// File C:\Home\Developing\PM3-FernandoMGan\front\src\redux\store.js
+
 import { configureStore } from '@reduxjs/toolkit';
 import rootReducer from './reducer';
 
@@ -7,3 +8,4 @@ const store = configureStore({
 });
 
 export default store;
+

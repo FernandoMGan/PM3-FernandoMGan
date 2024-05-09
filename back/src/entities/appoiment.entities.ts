@@ -14,7 +14,7 @@ export class Appoiment {
     @Column()
     time: string
 
-    @Column()
+    @Column() 
     userid: string
 
     @Column({ type: 'enum', enum: ['active', 'cancelled'] })

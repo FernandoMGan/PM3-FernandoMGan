@@ -1,0 +1,78 @@
+:root {
+    --vc-nav-back: rgb(149, 243, 145);
+    --vc-nav-border: rgba(0, 255, 0, 0.7);
+    --vc-nav-hover: rgb(87 255 14 /70%);
+    --vc-nav-shadow: rgba(0, 255, 0, 0.8);
+
+    --vc-font-color: rgba(0, 0, 255, 1);
+    --vc-font-hover: rgb(6, 127, 197);
+    --vc-font-active: rgb(214, 78, 207);
+
+    --vc-board-navin: rgb(4, 209, 216);
+    --vc-board-navout: rgb(126, 11, 120);
+
+    --vc-mnu-item-bck: rgb(211, 206, 206);
+    --vc-mnu-item-itm: rgb(219, 207, 94);
+}
+
+html {
+    font-size: 62.5%;
+    background-color: var(--vc-white);
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+
+    border: 1.5px solid var(--vc-nav-border);
+    box-shadow: 0 0 10px var(--vc-nav-shadow);
+
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4rem;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.inptxt {
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: var(--buttonBorderRadius-brstd);
+    font-size: var(--md);
+    margin-bottom: 1.0rem;
+    margin-left: -2rem;
+    height: 3.0rem;
+    width: 110%;
+    padding: 0.6rem;
+}
+
+.inpemail {
+    background-color: var(--vc-board-navin);
+    border: none;
+    border-radius: var(--buttonBorderRadius-brstd);
+    font-size: var(--md);
+    margin-bottom: 1.0rem;
+    margin-left: -2rem;
+    height: 3.0rem;
+    width: 110%;
+    padding: 0.6rem;
+}
+
+.txtarea {
+    width: 110%;
+}
+
+.btnbuttons {
+    padding-right: 2rem;
+}

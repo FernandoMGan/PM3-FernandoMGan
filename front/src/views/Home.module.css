@@ -1,0 +1,83 @@
+/* File C:\Home\Developing\PM3-FernandoMGan\front\src\views\Home.module.css */
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #efd0b1;
+    --hospital-green: #ACD9B2;
+    --error-red: #f30808;
+    --sm: 1.2rem;
+    --md: 2.0rem;
+    --lg: 3.6rem;
+
+    --buttonBorderRadius-brstd: 1rem;
+
+    --tit-company-leg-name: "BPO CHANGE";
+    --app-background-color-fondo: rgba(193, 240, 197, 0.993);
+    /* Corregido el nombre de la variable */
+
+    --vc-nav-back: rgb(149, 243, 145);
+    --vc-nav-border: rgba(0, 255, 0, 0.7);
+    --vc-nav-hover: rgb(87 255 14 /70%);
+    --vc-nav-shadow: rgba(0, 255, 0, 0.8);
+
+    --vc-font-color: rgba(0, 0, 255, 1);
+    --vc-font-hover: rgb(6, 127, 197);
+    --vc-font-active: rgb(112, 1, 107);
+
+    --vc-board-navin: rgb(4, 209, 216);
+    --vc-board-navout: rgb(126, 11, 120);
+
+    --vc-mnu-item-bck: rgb(211, 206, 206);
+    --vc-mnu-item-itm: rgb(219, 207, 94);
+}
+
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: var(--app-background-color-fondo);
+    /* Corregido el nombre de la variable */
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.nones {
+    display: none;
+}
+
+.cntdhome {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: fixed;
+    gap: 10px;
+    background-color: #FFFFFF;
+    border: 1px solid var(--vc-nav-border);
+    border-radius: 10px;
+    box-shadow: 0px 0px 0.5rem 0.5rem var(--vc-nav-shadow);
+    left: 0rem;
+    top: 5.5rem;
+    height: auto;
+    margin-left: 1.5rem;
+    max-width: 97.5%;
+    padding: 16px;
+    justify-content: center;
+    justify-items: center;
+    opacity: 0.5;
+}
+
+.image {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}

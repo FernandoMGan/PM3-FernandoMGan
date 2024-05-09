@@ -1,0 +1,103 @@
+/* File C:\Home\Developing\PM3-FernandoMGan\front\src\views\NavBarIII.module.css */
+:root {
+    --vc-nav-back: rgb(149, 243, 145);
+    --vc-nav-border: rgba(0, 255, 0, 0.7);
+    --vc-nav-hover: rgb(87 255 14 /70%);
+    --vc-nav-shadow: rgba(0, 255, 0, 0.8);
+
+    --vc-font-color: rgba(0, 0, 255, 1);
+    --vc-font-hover: rgb(6, 127, 197);
+    --vc-font-active: rgb(214, 78, 207);
+
+    --vc-board-navin: rgb(4, 209, 216);
+    --vc-board-navout: rgb(126, 11, 120);
+
+    --vc-mnu-item-bck: rgb(211, 206, 206);
+    --vc-mnu-item-itm: rgb(219, 207, 94);
+}
+
+html {
+    font-size: 62.5%;
+    background-color: var(--vc-white);
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 98.5%;
+    margin-left: 1rem;
+    margin-right: 2rem;
+
+    margin-top: 0.5rem;
+    padding: 0px 2rem;
+}
+
+.seccmpt {
+    border: 1px solid black;
+    margin: 0.1px;
+    border-radius: 5px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    left: 0rem;
+    border-radius: 7.5px;
+    height: 4rem;
+    border: 2px solid var(--vc-nav-border);
+    top: 0.1rem;
+}
+
+.navbar:hover {
+    border: 1.5px solid var(--vc-nav-border);
+    box-shadow: 0 0 10px var(--vc-nav-shadow);
+}
+
+.navBarItm {
+    /* border: 1px solid var(--vc-nav-hover); */
+    border-radius: 2.5px;
+    background-color: var(--vc-mnu-item-bck);
+    color: var(--vc-font-color);
+    padding: 0.25rem;
+    padding-left: 0.50rem;
+    margin-top: 0.25rem;
+}
+
+.navBarItm:hover {
+    border: 1px solid var(--vc-font-hover);
+    border-radius: 5px;
+    background-color: var(--vc-mnu-item-itm);
+    padding: 0.25rem;
+    padding-left: 0.50rem;
+}
+
+.navBarItm:active {
+    border: 1px solid var(--vc-font-hover);
+    border-radius: 5px;
+    background-color: var(--vc-nav-back);
+    color: var(--vc-font-color);
+    padding: 0.25rem;
+    padding-left: 0.50rem;
+}
+
+.navBarImg {
+    height: 2rem;
+    cursor: pointer;
+}
